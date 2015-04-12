@@ -67,11 +67,9 @@ color: red;
   text-align: right;
 }
 .nav_menu {
-  width: 100%;
   padding .5em;
   text-decoration: none;
   float: right;
-  margin-left: 80%
 }
 
 .nav_menu li {
