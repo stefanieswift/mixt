@@ -28,7 +28,7 @@ post '/user/signed_up' do
   redirect '/'
 end
 
-post '/user/logged_out' do
+get '/user/logged_out' do
  session[:user_id] = nil
  redirect '/'
 end
