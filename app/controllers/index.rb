@@ -14,7 +14,7 @@ end
 
 post '/user/logged_in' do
  @user = User.where(username: params[:username]).first
-  if @user && @user.password == params[:password]
+  if @user && @user.password_hash == params[:password]
     session[:user_id] = @user.id
     redirect '/'
   else
@@ -32,4 +32,6 @@ post '/user/logged_out' do
  session[:user_id] = nil
  redirect '/'
 end
+
+
 
