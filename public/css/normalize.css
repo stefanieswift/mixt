@@ -11,7 +11,12 @@ html {
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
-
+.nav_menu {
+  width: 50%;
+  padding .5em;
+  text-decoration: none;
+  float: left;
+}
 /**
  * Remove default margin.
  */
