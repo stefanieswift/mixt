@@ -18,12 +18,12 @@ post '/user/logged_in' do
     session[:user_id] = @user.id
     redirect '/'
   else
-     '/'
+     redirect '/'
   end
 end
 
 post '/user/signed_up' do
-  @user = User.create(name: params[:name], email: params[:email], username: params[:username], password: params[:password_hash])
+  @user = User.create!(name: params[:name], email: params[:email], username: params[:username], password: params[:password])
   session[:user_id] = @user.id
   redirect '/'
 end
