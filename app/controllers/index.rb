@@ -13,9 +13,11 @@ get '/user/new' do
 end
 
 post '/user/logged_in' do
-  @user = User.where(username: params[:username])
-  session[:user_id] = @user.id
-  redirect '/'
+ @user = User.where(handle: params[:handle]).first
+  if @user && @user.password == params[:password]
+    session[:user_id] = @user.id
+    redirect '/'
+  end
 end
 
 post '/user/signed_up' do
