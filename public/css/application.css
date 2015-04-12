@@ -2,7 +2,25 @@ body {
   background-color: #F1EEE9;
 }
 
-.home_log_in li{
+.nav_menu {
+  padding .5em;
+  text-decoration: none;
+  float: right;
+}
+
+.nav_menu li {
+  padding: .5em;
+  color:  #090768;
+  display: inline-block;
+  list-style-type: none;
+}
+
+.nav_menu li:hover {
+  padding: .5em;
+  color:  red;
+}
+
+li{
   list-style-type: none;
   float: left;
   list-style-type: none;
@@ -18,7 +36,7 @@ body {
 
 }
 
-.home_log_in li:hover {
+li:hover {
 color: red;
 }
 
@@ -66,23 +84,7 @@ color: red;
   width: 100%
   text-align: right;
 }
-.nav_menu {
-  padding .5em;
-  text-decoration: none;
-  float: right;
-}
 
-.nav_menu li {
-  padding: .5em;
-  color:  #090768;
-  display: inline-block;
-  list-style-type: none;
-}
-
-.nav_menu li:hover {
-  padding: .5em;
-  color:  red;
-}
 .header_image {
   clear: both;
 }
