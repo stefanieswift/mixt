@@ -18,10 +18,13 @@ post '/user/logged_in' do
     session[:user_id] = @user.id
     redirect '/'
   else
-     redirect '/'
+     redirect '/errors'
   end
 end
 
+get '/errors' do
+  erb :errors
+end
 post '/user/signed_up' do
   @user = User.create!(name: params[:name], email: params[:email], username: params[:username], password_hash: params[:password])
   session[:user_id] = @user.id
