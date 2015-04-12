@@ -71,6 +71,7 @@ color: red;
   padding .5em;
   text-decoration: none;
   float: right;
+  margin-left: 80%
 }
 
 .nav_menu li {
