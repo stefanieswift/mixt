@@ -1,0 +1,95 @@
+body {
+  background-color: #F1EEE9;
+}
+
+li{
+  list-style-type: none;
+  float: left;
+  list-style-type: none;
+  display: inline;
+  color: #090768;
+}
+
+.sign_up{
+    border: 2px solid #090768;
+  background-color: #F1EEE9;
+  color: #090768;
+  font-family: serif
+
+}
+
+li:hover {
+color: red;
+}
+
+.button {
+  color: #090768;
+  font-family: serif;
+  padding: .5em;
+}
+
+.home_log_in {
+  border: 2px solid #090768;
+  background-color: #F1EEE9;
+  color: #090768;
+  font-family: serif;
+   display: inline;
+   text-align: right;
+}
+
+.home_log_in placeholder{
+  color: #090768;
+}
+
+::-webkit-input-placeholder {
+   color: #090768;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #090768;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #090768;
+}
+
+:-ms-input-placeholder {
+   color: #090768;
+}
+.button:hover{
+  color: red;
+
+}
+
+.login_menu{
+  float: right;
+  width: 100%
+  text-align: right;
+}
+
+.header_image {
+  clear: both;
+}
+.header_image img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  vertical-align: center;
+  text-align: center;
+  margin-top: 10%;
+width: 40%;
+height: 40%;
+}
+
+.container {
+display: block;
+padding: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  vertical-align: center;
+  text-align: center;
+  margin: 5%;
+  border: 2px #090768 solid;
+}
