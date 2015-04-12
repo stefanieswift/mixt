@@ -23,8 +23,9 @@ post '/user/logged_in' do
 end
 
 get '/errors' do
-  erb :errors
+  erb :error
 end
+
 post '/user/signed_up' do
   @user = User.create!(name: params[:name], email: params[:email], username: params[:username], password_hash: params[:password])
   session[:user_id] = @user.id
