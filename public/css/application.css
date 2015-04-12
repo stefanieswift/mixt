@@ -76,6 +76,8 @@ color: red;
 .nav_menu li {
   padding: .5em;
   color:  #090768;
+  display: inline-block;
+  list-style-type: none;
 }
 
 .nav_menu li:hover {
