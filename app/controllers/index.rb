@@ -17,6 +17,8 @@ post '/user/logged_in' do
   if @user && @user.password == params[:password]
     session[:user_id] = @user.id
     redirect '/'
+  else
+     '/'
   end
 end
 
