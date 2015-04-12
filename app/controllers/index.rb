@@ -13,7 +13,7 @@ get '/user/new' do
 end
 
 post '/user/logged_in' do
- @user = User.where(handle: params[:handle]).first
+ @user = User.where(username: params[:username]).first
   if @user && @user.password == params[:password]
     session[:user_id] = @user.id
     redirect '/'
