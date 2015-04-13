@@ -4,6 +4,7 @@ get '/' do
   if session[:user_id].nil?
     erb :index
   else
+    @user = User.where(id: session[:user_id])
     erb :welcome
   end
 end
@@ -37,5 +38,10 @@ get '/user/logged_out' do
  redirect '/'
 end
 
+get '/user/:id' do
+  redirect '/'
+end
 
-
+get '/user/:id/account' do
+  redirect '/'
+end
