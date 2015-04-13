@@ -1,21 +1,21 @@
 $( ".header_image" ).hide().show( "slow" );
 
 
-var $select = $( "<select></select>");
-$(".nav_menu").append($select);
+// var $select = $( "<select></select>");
+// $(".nav_menu").append($select);
 
-$(".nav_menu a").each(function(){
-  var $anchor = $(this);
-  var $option = $("<option></option>")
+// $(".nav_menu a").each(function(){
+//   var $anchor = $(this);
+//   var $option = $("<option></option>")
 
-  $option.val($anchor.attr("href"));
-  $option.text($anchor.text());
-  $select.append($option);
-});
+//   $option.val($anchor.attr("href"));
+//   $option.text($anchor.text());
+//   $select.append($option);
+// });
 
-var $button = $("<button>Go</button>");
-$(".nav_menu").append($button);
+// var $button = $("<button>Go</button>");
+// $(".nav_menu").append($button);
 
-$button.click(function(){
-  window.location = $select.val();
-});
+// $button.click(function(){
+//   window.location = $select.val();
+// });
