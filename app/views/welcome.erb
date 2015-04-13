@@ -1,24 +1,7 @@
 <div class="nav_menu">
   <ul>
-    <li><a href="/user/<%= @user.id %>">profile</a></li>
-    <li><a href="/user/<%= @user.id %>/account">account</a></li>
+    <!-- <li><a href="/user/<%= @user.id %>">profile</a></li> -->
+   <!--  <li><a href="/user/<%= @user.id %>/account">account</a></li> -->
     <li><a href="/user/logged_out">log out</a></li>
   </ul>
 </div>
-
-<script src="http://connect.soundcloud.com/sdk.js"></script>
-<script>
-SC.initialize({
-  client_id: 'dac104ef51ce826e30cba39ce49640e3heroky'
-});
-
-var page_size = 200;
-
-SC.get('/tracks', { limit: page_size }, function(tracks) {
-  // first 100 tracks
-});
-
-SC.get('/tracks', { limit: page_size, linked_partitioning: 1 }, function(tracks) {
-  // page through results, 100 at a time
-});
-</script>
