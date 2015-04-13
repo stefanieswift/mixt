@@ -4,7 +4,6 @@ get '/' do
   if session[:user_id].nil?
     erb :index
   else
-
     erb :welcome
   end
 end
