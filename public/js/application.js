@@ -2,9 +2,9 @@ $( ".header_image" ).hide().show( "slow" );
 
 
 var $select = $( "<select></select>");
-$(".login_menu").append($select);
+$(".nav_menu").append($select);
 
-$(".login_menu a").each(function(){
+$(".nav_menu a").each(function(){
   var $anchor = $(this);
   var $option = $("<option></option>")
 
@@ -14,7 +14,7 @@ $(".login_menu a").each(function(){
 });
 
 var $button = $("<button>Go</button>");
-$(".login_menu").append($button);
+$(".nav_menu").append($button);
 
 $button.click(function(){
   window.location = $select.val();

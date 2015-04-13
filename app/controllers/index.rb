@@ -4,6 +4,7 @@ get '/' do
   if session[:user_id].nil?
     erb :index
   else
+    @user = User.where(id: session[:user_id])
     erb :welcome
   end
 end
