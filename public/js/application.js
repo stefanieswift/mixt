@@ -1,1 +1,1 @@
-$(".header_image").hide().show('slow');
+$(".header_image").hide().show("slow");
