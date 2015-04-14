@@ -20,11 +20,23 @@ body {
   color:  red;
 }
 
-li{
+.login_menu{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  vertical-align: center;
+  text-align: center;
+  margin-top: 2%;
+width: 40%;
+height: 40%;
+}
+
+.login_menu li{
   list-style-type: none;
   float: left;
   list-style-type: none;
-  display: inline;
+  display: block;
   color: #090768;
 }
 
@@ -36,7 +48,7 @@ li{
 
 }
 
-li:hover {
+.login_menu li:hover {
 color: red;
 }
 
@@ -85,9 +97,6 @@ color: red;
   text-align: right;
 }
 
-.header_image {
-  clear: both;
-}
 .header_image img{
   display: block;
   margin-left: auto;
@@ -95,7 +104,7 @@ color: red;
   margin-bottom: auto;
   vertical-align: center;
   text-align: center;
-  margin-top: 10%;
+  margin-top: 2%;
 width: 40%;
 height: 40%;
 }
