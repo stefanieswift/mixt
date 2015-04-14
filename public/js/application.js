@@ -30,9 +30,25 @@ $button.click(function(){
 // password confirmation feature
 var $password = $("#password");
 var $confirmPassword = $("#confirm_password");
+var $email = $("#email");
+var $username = $("#username");
 
 //Hide hints
 $("form span").hide();
+
+function isEmailValid(){
+  var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/
+  return filter.test($email.val())
+}
+
+// function isUsernameValid(){
+//   return $username.val().length > 2
+// }
+
+// function isUsernameUnique(){
+
+// }
+
 
 function isPasswordValid() {
   return $password.val().length > 8;
@@ -43,7 +59,18 @@ function arePasswordsMatching() {
 }
 
 function canSubmit() {
-  return isPasswordValid() && arePasswordsMatching();
+  return isPasswordValid() && arePasswordsMatching() && isEmailValid();
+}
+
+function emailEvent(){
+    //Find out if password is valid
+    if(isEmailValid()) {
+      //Hide hint if valid
+      $email.next().hide();
+    } else {
+      //else show hint
+      $email.next().show();
+    }
 }
 
 function passwordEvent(){
@@ -77,5 +104,8 @@ $password.focus(passwordEvent).keyup(passwordEvent).keyup(confirmPasswordEvent).
 
 //When event happens on confirmation input
 $confirmPassword.focus(confirmPasswordEvent).keyup(confirmPasswordEvent).keyup(enableSubmitEvent);
+
+$email.focus(emailEvent).keyup(emailEvent);
+
 
 enableSubmitEvent();

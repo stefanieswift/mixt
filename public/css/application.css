@@ -1,6 +1,8 @@
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+
 body {
   background-color: #F1EEE9;
-  font-family: 'Indie Flower'
+  font-family: 'Indie Flower', cursive;
 }
 
 .nav_menu {
@@ -14,6 +16,7 @@ body {
   color:  #090768;
   display: inline-block;
   list-style-type: none;
+  font-family: 'Indie Flower', cursive;
 }
 
 .nav_menu li:hover {
@@ -41,7 +44,7 @@ height: 100%;
     border: 2px solid #090768;
   background-color: #F1EEE9;
   color: #090768;
-  font-family: 'Indie Flower', serif
+  font-family: 'Indie Flower', cursive;
 
 }
 
@@ -51,7 +54,7 @@ color: red;
 
 .button {
   color: #090768;
-  font-family: 'Indie Flower', serif;
+  font-family: 'Indie Flower', cursive;
   padding: .5em;
 }
 
@@ -59,34 +62,34 @@ color: red;
   border: 2px solid #090768;
   background-color: #F1EEE9;
   color: #090768;
-  font-family: 'Indie Flower', serif;
-   display: inline;
+  font-family: 'Indie Flower', cursive;
+  display: inline;
 }
 
 .home_log_in placeholder{
   color: #090768;
-  font-family: 'Indie Flower', serif;
+  font-family: 'Indie Flower', cursive;
 
 }
 
 ::-webkit-input-placeholder {
    color: #090768;
-   font-family: 'Indie Flower', serif;
+   font-family: 'Indie Flower', cursive;
 }
 
 :-moz-placeholder { /* Firefox 18- */
    color: #090768;
-   font-family: 'Indie Flower', serif;
+   font-family: 'Indie Flower', cursive;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
    color: #090768;
-   font-family: 'Indie Flower', serif;
+   font-family: 'Indie Flower', cursive;
 }
 
 :-ms-input-placeholder {
    color: #090768;
-   font-family: 'Indie Flower', serif;
+   font-family: 'Indie Flower', cursive;
 }
 .button:hover{
   color: red;
@@ -112,7 +115,7 @@ display: block;
   /*vertical-align: center;*/
   text-align: center;
   border: 2px #090768 solid;
-  font-family: 'Indie Flower', serif
+  font-family: 'Indie Flower', cursive;
 }
 
 .container form label{
@@ -122,7 +125,7 @@ display: block;
   margin-right: auto;
   text-align: left;
   font-size: 1em;
-  font-family: 'Indie Flower', serif
+  font-family: 'Indie Flower', cursive;
 }
 
 .container form input{
@@ -149,6 +152,6 @@ display: block;
  }
 }
 .container form p label{
-  font-family: serif;
+  font-family: 'Indie Flower', cursive;
   font-size: 1em;
 }

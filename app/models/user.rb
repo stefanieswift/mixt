@@ -9,6 +9,7 @@ class User < ActiveRecord::Base
   has_many :opposite, class_name: "Relationship", foreign_key: "followee_id"
   has_many :followees, through: :opposite, source: :follower
 
+  validates :email, uniqueness: true
   include BCrypt
 
   def password
