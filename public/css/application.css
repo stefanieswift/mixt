@@ -112,7 +112,7 @@ padding: 10%;
   border: 2px #090768 solid;
 }
 
-/*@media (min-width: 320px) and (max-width: 568px){
+@media (min-width: 320px) and (max-width: 568px){
 .nav_menu ul {
   display: none;
 }
@@ -121,4 +121,4 @@ padding: 10%;
  .nav_menu select, .nav_menu button {
   display: none;
  }
-}*/
+}
