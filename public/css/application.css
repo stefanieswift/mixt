@@ -86,12 +86,6 @@ color: red;
 
 }
 
-.login_menu{
-  float: right;
-  width: 100%
-  text-align: right;
-}
-
 .header_image img{
   display: block;
   margin-left: auto;
