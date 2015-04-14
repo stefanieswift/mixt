@@ -1,17 +1,30 @@
-<div class= "container">
-<form action='/user/signed_up' method="post">
-  <input class="sign_up" type="text" name="name" placeholder="Name">
-  </br>
-  </br>
-  <input class="sign_up" type="text" name="email" placeholder="Email">
-  </br>
-  </br>
-  <input class="sign_up" type="text" name="username" placeholder="Username">
-  </br>
-  </br>
-  <input class="sign_up" type="password" name="password" placeholder="Password">
-  </br>
-  </br>
-  <input class="button" type="Submit" value="Sign up!">
-      </form>
-      </div>
+<div class="container">
+
+      <form action='/user/signed_up' method="post">
+    <p>
+      <label for="name">Name: </label>
+      <input  class="sign_up" id="name" name="name" type="text">
+    </p>
+    <p>
+      <label for="Email">Email: </label>
+      <input  class="sign_up" id="email" name="email" type="text">
+    </p>
+    <p>
+      <label for="username">Username: </label>
+      <input  class="sign_up" id="username" name="username" type="text">
+    </p>
+    <p>
+      <label for="password">Password: </label>
+      <input  class="sign_up" id="password" name="password" type="password">
+      <span>Enter a password longer than 8 characters</span>
+    </p>
+    <p>
+      <label for="confirm_password">Confirm Password: </label>
+      <input  class="sign_up" id="confirm_password" name="confirm_password" type="password">
+      <span>Please confirm your password</span>
+    </p>
+    <p>
+      <input type="submit" value="SUBMIT" id="submit">
+    </p>
+  </form>
+  </div>

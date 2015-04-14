@@ -108,9 +108,31 @@ display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
-  vertical-align: center;
+  /*vertical-align: center;*/
   text-align: center;
   border: 2px #090768 solid;
+}
+
+.container form label{
+  display: block;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  font-size: 1em;
+}
+
+.container form input{
+  display: block;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  text-align: left;
+}
+
+.container #submit {
+  text-align: center;
 }
 
 @media (min-width: 320px) and (max-width: 567px){
@@ -122,4 +144,8 @@ display: block;
  .nav_menu select, .nav_menu button {
   display: none;
  }
+}
+.container form p label{
+  font-family: serif;
+  font-size: 1em;
 }
