@@ -17,7 +17,7 @@ googleApiClientReady = function() {
 // user interface that prompts for authorization needs to display.
 function checkAuth() {
   gapi.auth.authorize({
-    client_id: OAUTH2_CLIENT_ID,
+    client_id: 'notional-life-91621',
     scope: OAUTH2_SCOPES,
     immediate: true
   }, handleAuthResult);
@@ -36,7 +36,7 @@ function handleAuthResult(authResult) {
     // client flow. The current function is called when that flow completes.
     $('#login-link').click(function() {
       gapi.auth.authorize({
-        client_id: OAUTH2_CLIENT_ID,
+        client_id: 'notional-life-91621',
         scope: OAUTH2_SCOPES,
         immediate: false
         }, handleAuthResult);

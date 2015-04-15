@@ -1,4 +1,3 @@
-
 function handleAPILoaded() {
   $('#search-button').attr('disabled', false);
 }
@@ -11,13 +10,8 @@ function search() {
     part: 'snippet'
   });
 
-$('#search-button').on('click', function(event){
-   event.preventDefault();
-   search();
-   request.execute(function(response) {
+  request.execute(function(response) {
     var str = JSON.stringify(response.result);
     $('#search-container').html('<pre>' + str + '</pre>');
   });
-};
-})
-
+}

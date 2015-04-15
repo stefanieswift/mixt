@@ -110,4 +110,6 @@ $email.focus(emailEvent).keyup(emailEvent);
 
 enableSubmitEvent();
 
-//youtube api
+//adding new html box to erb file
+
+$(".nav_menu").append("#buttons")
