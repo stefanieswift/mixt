@@ -19,10 +19,6 @@ body {
   font-family: 'Indie Flower', serif;
 }
 
-.nav_menu li:hover {
-  padding: .5em;
-  color:  red;
-}
 
 .login_menu{
   display: block;
@@ -34,6 +30,7 @@ height: 100%;
 
 .login_menu ul {
   padding: 0;
+  margin: 0;
 }
 .login_menu li{
   list-style-type: none;
@@ -46,10 +43,6 @@ height: 100%;
   color: #090768;
   font-family: 'Indie Flower', serif;
 
-}
-
-.login_menu li:hover {
-color: red;
 }
 
 .button {
@@ -66,35 +59,6 @@ color: red;
   display: inline;
 }
 
-.home_log_in placeholder{
-  color: #090768;
-  font-family: 'Indie Flower', serif;
-
-}
-
-::-webkit-input-placeholder {
-   color: #090768;
-   font-family: 'Indie Flower', serif;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-   color: #090768;
-   font-family: 'Indie Flower', serif;
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   color: #090768;
-   font-family: 'Indie Flower', serif;
-}
-
-:-ms-input-placeholder {
-   color: #090768;
-   font-family: 'Indie Flower', serif;
-}
-.button:hover{
-  color: red;
-
-}
 
 .header_image img{
   display: block;
@@ -103,22 +67,20 @@ color: red;
   margin-bottom: auto;
   vertical-align: center;
   text-align: center;
-width: 50%;
-height: 50%;
+width: 42%;
+height: 42%;
 }
 
 .container {
 display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: auto;
   /*vertical-align: center;*/
   text-align: center;
-  border: 2px #090768 solid;
   font-family: 'Indie Flower', serif;
 }
 
-.container form label{
+form label{
   display: block;
   width: 40%;
   margin-left: auto;
@@ -128,7 +90,7 @@ display: block;
   font-family: 'Indie Flower', serif;
 }
 
-.container form input{
+form input{
   display: block;
   width: 40%;
   margin-left: auto;
@@ -137,8 +99,13 @@ display: block;
   text-align: left;
 }
 
-.container #submit {
+#submit {
   text-align: center;
+}
+
+#submit:hover {
+  color:#00FFBF;
+  background-color: #090068;
 }
 
 @media (min-width: 320px) and (max-width: 567px){
@@ -151,7 +118,7 @@ display: block;
   display: none;
  }
 }
-.container form p label{
+form p label{
   font-family: 'Indie Flower', serif;
   font-size: 1em;
 }
