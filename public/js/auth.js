@@ -1,4 +1,4 @@
-var OAUTH2_CLIENT_ID = 'notional-life-91621';
+var OAUTH2_CLIENT_ID = '156986861666-6e3ntbvgvns8o7ktmooh8siolbib4cgt.apps.googleusercontent.com';
 var OAUTH2_SCOPES = [
   'https://www.googleapis.com/auth/youtube'
 ];
@@ -17,7 +17,7 @@ googleApiClientReady = function() {
 // user interface that prompts for authorization needs to display.
 function checkAuth() {
   gapi.auth.authorize({
-    client_id: 'notional-life-91621',
+    client_id: OAUTH2_CLIENT_ID,
     scope: OAUTH2_SCOPES,
     immediate: true
   }, handleAuthResult);
@@ -36,7 +36,7 @@ function handleAuthResult(authResult) {
     // client flow. The current function is called when that flow completes.
     $('#login-link').click(function() {
       gapi.auth.authorize({
-        client_id: 'notional-life-91621',
+        client_id: OAUTH2_CLIENT_ID,
         scope: OAUTH2_SCOPES,
         immediate: false
         }, handleAuthResult);
