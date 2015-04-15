@@ -112,6 +112,7 @@ form input{
 .nav_menu ul {
   display: none;
 }
+}
 
 @media (min-width:568px) {
  .nav_menu select, .nav_menu button {
